@@ -1,5 +1,7 @@
 .body {
+  direction: rtl;
   position: relative;
   color: main;
+  font-family: font-1;
 }
 /*# sourceMappingURL=src/stylus/blocks/body.css.map */

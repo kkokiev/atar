@@ -150,16 +150,30 @@ table {
   border-spacing: 0;
 }
 @font-face {
-  font-family: 'opensanshebrew-bold';
-  src: url("fonts/opensanshebrew-bold-webfont.woff") format('woff');
-  src: url("fonts/opensanshebrew-bold-webfont.woff2") format('woff2');
+  font-family: 'rubik-bold';
+  src: url("fonts/rubik-bold-webfont.woff") format('woff');
+  src: url("fonts/rubik-bold-webfont.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'opensanshebrew-regular';
-  src: url("fonts/opensanshebrew-regular-webfont.woff") format('woff');
-  src: url("fonts/opensanshebrew-regular-webfont.woff2") format('woff2');
+  font-family: 'rubik-regular';
+  src: url("fonts/rubik-regular-webfont.woff") format('woff');
+  src: url("fonts/rubik-regular-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubik-black';
+  src: url("fonts/rubik-black-webfont.woff") format('woff');
+  src: url("fonts/rubik-black-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubik-medium';
+  src: url("fonts/rubik-medium-webfont.woff") format('woff');
+  src: url("fonts/rubik-medium-webfont.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -176,10 +190,53 @@ img {
   vertical-align: top;
 }
 .body {
+  direction: rtl;
   position: relative;
   color: #000;
+  font-family: 'rubik-regular', serif;
 }
-body {
-  background: #000;
+.intro {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  background-color: #267ada;
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro__title {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 510px;
+  width: 510px;
+  padding: 54px;
+  margin: auto;
+  background: transparent url("images/intro-bg-round.png") center center no-repeat;
+  background-size: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.intro__title-inner-wrap {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.intro__title-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.intro__title-inner h2 {
+  font-family: 'rubik-bold', serif;
+  font-size: 6rem;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.intro__title-inner p {
+  font-size: 5rem;
 }
 /*# sourceMappingURL=src/stylus/style.css.map */
