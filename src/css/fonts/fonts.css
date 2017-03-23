@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'opensanshebrew-bold';
+  src: url("fonts/opensanshebrew-bold-webfont.woff") format('woff');
+  src: url("fonts/opensanshebrew-bold-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'opensanshebrew-regular';
+  src: url("fonts/opensanshebrew-regular-webfont.woff") format('woff');
+  src: url("fonts/opensanshebrew-regular-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=src/stylus/fonts/fonts.css.map */
