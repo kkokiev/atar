@@ -239,4 +239,17 @@ img {
 .intro__title-inner p {
   font-size: 5rem;
 }
+.table {
+  max-width: 100%;
+  margin: 100px auto 200px;
+  font-size: 2rem;
+}
+.table thead th {
+  padding: 5px 10px;
+  border: 1px solid #23408f;
+}
+.table tbody td {
+  padding: 5px 10px;
+  border: 1px solid #23408f;
+}
 /*# sourceMappingURL=src/stylus/style.css.map */

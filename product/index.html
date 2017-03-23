@@ -8,7 +8,11 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
+	<!-- bxslider -->
+	<link href="lib/bxslider/jquery.bxslider.min.css" rel="stylesheet">
+	<!-- tablesaw -->
+	<link href="lib/tablesaw/tablesaw.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 </head>
 
@@ -51,6 +55,64 @@
 
 		</div><!-- /.intro -->
 
+		<div class="content__row">
+			
+			<div class="table-section">
+				
+				<table class="table" data-tablesaw-sortable data-tablesaw-mode="swipe">
+					<thead>
+						<tr>
+							<!-- Default column -->
+							<th data-tablesaw-sortable-col data-tablesaw-sortable-default-col>Text 1</th>
+
+							<th data-tablesaw-sortable-col>Text 2</th>
+
+							<th data-tablesaw-sortable-col data-tablesaw-sortable-numeric>Text 3</th>
+
+							<th data-tablesaw-sortable-col data-tablesaw-sortable-numeric>
+							Text 4
+							</th>
+							<th data-tablesaw-sortable-col data-tablesaw-sortable-numeric>
+							Text 5
+							</th>
+							<!-- Unsortable column -->
+							<th>Text 6</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1 col 1</td>
+							<td>1 col 2</td>
+							<td>1 col 3</td>
+							<td>1 col 4</td>
+							<td>1 col 5</td>
+							<td>1 col 6</td>
+						</tr>
+
+						<tr>
+							<td>2 col 1</td>
+							<td>2 col 2</td>
+							<td>2 col 3</td>
+							<td>2 col 4</td>
+							<td>2 col 5</td>
+							<td>2 col 6</td>
+						</tr>
+
+						<tr>
+							<td>3 col 1</td>
+							<td>3 col 2</td>
+							<td>3 col 3</td>
+							<td>3 col 4</td>
+							<td>3 col 5</td>
+							<td>3 col 6</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
 	</div><!-- /.content -->
 
 </div><!-- /.main-wrapper -->
@@ -60,6 +122,10 @@
 
 <!-- bxSlider -->
 <script src="lib/bxslider/jquery.bxslider.min.js"></script>
+
+<!-- tablesaw -->
+<script src="lib/tablesaw/tablesaw.jquery.js"></script>
+<script src="lib/tablesaw/tablesaw-init.js"></script>
 
 <!-- app js -->
 <script src="js/app.js"></script>

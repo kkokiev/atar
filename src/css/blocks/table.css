@@ -1,0 +1,14 @@
+.table {
+  max-width: 100%;
+  margin: 100px auto 200px;
+  font-size: 2rem;
+}
+.table thead th {
+  padding: 5px 10px;
+  border: 1px solid tableBorder;
+}
+.table tbody td {
+  padding: 5px 10px;
+  border: 1px solid tableBorder;
+}
+/*# sourceMappingURL=src/stylus/blocks/table.css.map */
