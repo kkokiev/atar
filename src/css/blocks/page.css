@@ -1,11 +1,19 @@
 .page__row {
   padding-top: 80px;
+  padding-bottom: 152px;
 }
 .page__row_2 {
-  padding-bottom: 152px;
   background: transparent url("images/bg-2.png") right center no-repeat;
   background-size: 30% auto;
   border-bottom: 1px solid #000;
+}
+.page__row_3 {
+  background: transparent url("images/bg-3.png") left center no-repeat;
+  background-size: auto 100%;
+}
+.page__row_5 {
+  background: transparent url("images/bg-5.png") 50px center no-repeat;
+  background-size: auto;
 }
 .page__title {
   margin-bottom: 30px;

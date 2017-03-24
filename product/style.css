@@ -338,6 +338,42 @@ img {
     max-width: 60px;
   }
 }
+.image-wrap {
+  position: relative;
+  padding-top: 6px;
+}
+.image-wrap__label {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 350px;
+  padding: 16px;
+  color: #fff;
+  background: #40ae49;
+  box-shadow: 3px 2px 2px 0px rgba(0,0,0,0.5);
+}
+.image-wrap__label:after {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 0 5px;
+  border-color: transparent transparent transparent #23408f;
+}
+.image-wrap__label p {
+  font-size: 1.5rem;
+  line-height: 1.1em;
+}
+.image-wrap__body {
+  zindex: 1;
+  position: relative;
+  overflow: hidden;
+}
 .image-wrap .bx-wrapper {
   margin: 0;
 }
@@ -346,6 +382,55 @@ img {
   border: 0;
   left: 0;
   background: transparent;
+}
+.image-wrap .bx-wrapper .bx-controls-direction a {
+  height: 126px;
+  width: 126px;
+  margin-top: -63px;
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.image-wrap .bx-wrapper .bx-controls-direction a:hover,
+.image-wrap .bx-wrapper .bx-controls-direction a:focus {
+  background: rgba(0,0,0,0.8);
+}
+.image-wrap .bx-wrapper .bx-prev {
+  left: auto;
+  right: -63px;
+}
+.image-wrap .bx-wrapper .bx-prev:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 36px;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 20px 12px;
+  border-color: transparent transparent transparent #fff;
+}
+.image-wrap .bx-wrapper .bx-next {
+  right: auto;
+  left: -63px;
+}
+.image-wrap .bx-wrapper .bx-next:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 36px;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 12px 20px 0;
+  border-color: transparent #fff transparent transparent;
 }
 .image-wrap__slider > li > img {
   width: 100%;
@@ -524,12 +609,20 @@ img {
 }
 .page__row {
   padding-top: 80px;
+  padding-bottom: 152px;
 }
 .page__row_2 {
-  padding-bottom: 152px;
   background: transparent url("images/bg-2.png") right center no-repeat;
   background-size: 30% auto;
   border-bottom: 1px solid #000;
+}
+.page__row_3 {
+  background: transparent url("images/bg-3.png") left center no-repeat;
+  background-size: auto 100%;
+}
+.page__row_5 {
+  background: transparent url("images/bg-5.png") 50px center no-repeat;
+  background-size: auto;
 }
 .page__title {
   margin-bottom: 30px;

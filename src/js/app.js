@@ -24,10 +24,9 @@ if(!(window.console && console.log)) {
 		$navbar.stop().slideToggle();
 	});
 
-	$('.js-slider-1').bxSlider({
+	$('.js-slider').bxSlider({
 		mode: 'fade',
-		pager: false,
-		infiniteLoop: false
+		pager: false
 	})
 
 	// var testMobile;
