@@ -1,0 +1,45 @@
+.nav-btn {
+  position: relative;
+  display: block;
+  height: 24px;
+  width: 30px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.nav-btn:hover span,
+.nav-btn:focus span {
+  background: brand;
+}
+.nav-btn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: light;
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in-out;
+}
+.nav-btn span:nth-child(1) {
+  top: 2px;
+}
+.nav-btn span:nth-child(2) {
+  top: 10px;
+}
+.nav-btn span:nth-child(3) {
+  top: 18px;
+}
+.nav-btn_opened span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+.nav-btn_opened span:nth-child(2) {
+  left: 30px;
+  opacity: 0;
+}
+.nav-btn_opened span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+/*# sourceMappingURL=src/stylus/blocks/nav-btn.css.map */

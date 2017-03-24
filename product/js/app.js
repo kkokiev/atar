@@ -14,7 +14,15 @@ if(!(window.console && console.log)) {
 
 (function () {
 	
-	var $body = $('body');
+	var $body = $('body'),
+	$navBtn = $('#nav-btn'),
+	$navbar = $('#navbar');
+
+	$navBtn.on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('nav-btn_opened');
+		$navbar.stop().slideToggle();
+	});
 
 	// var testMobile;
 	// var isMobile = {

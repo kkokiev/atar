@@ -1,1 +1,1 @@
-{"version":3,"sources":["src/stylus/blocks/table.styl"],"names":[],"mappings":"AAAA;EACC,WAAU,KAAV;EACA,QAAO,iBAAP;EACA,WAAU,KAAV;;AAGC;EACC,SAAQ,SAAR;EACA,QAAO,sBAAP;;AAGD;EACC,SAAQ,SAAR;EACA,QAAO,sBAAP","file":"table.css"}
+{"version":3,"sources":["src/stylus/blocks/table.styl"],"names":[],"mappings":"AAAA;EACC,WAAU,KAAV;EACA,QAAO,iBAAP;EACA,WAAU,KAAV;;AAGC;EACC,SAAQ,SAAR;EACA,QAAO,oBAAP;;AAGD;EACC,SAAQ,SAAR;EACA,QAAO,oBAAP","file":"table.css"}

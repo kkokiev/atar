@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+}
+.header__bg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+  margin: auto 0;
+  height: 61px;
+  width: 100%;
+  background: brandDark;
+}
+.header__body {
+  z-index: 2;
+  position: relative;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.header__body-col {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+.header__body-col_logo-wrap {
+  padding: 0 5px;
+  text-align: left;
+}
+.header__nav-block-wrap {
+  position: relative;
+}
+.header__nav-block {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.header__nav-wrap {
+  display: table-cell;
+  width: 80px;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+.header__navbar {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  right: 0;
+  padding: 30px 0 10px;
+  background: brandDark;
+}
+.header__title-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.header__title {
+  font-size: 3.8rem;
+}
+.header__title strong,
+.header__title b {
+  color: brand;
+  font-family: font-2;
+}
+.header__logo-img {
+  vertical-align: middle;
+}
+.header__logo-img_1 {
+  max-width: 153px;
+  margin-left: 15px;
+}
+.header__logo-img_2 {
+  max-width: 114px;
+}
+/*# sourceMappingURL=src/stylus/blocks/header.css.map */

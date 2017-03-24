@@ -12,18 +12,4 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'rubik-black';
-  src: url("fonts/rubik-black-webfont.woff") format('woff');
-  src: url("fonts/rubik-black-webfont.woff2") format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'rubik-medium';
-  src: url("fonts/rubik-medium-webfont.woff") format('woff');
-  src: url("fonts/rubik-medium-webfont.woff2") format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
 /*# sourceMappingURL=src/stylus/fonts/fonts.css.map */
