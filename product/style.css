@@ -435,6 +435,28 @@ img {
 .image-wrap__slider > li > img {
   width: 100%;
 }
+.image-wrap__map-grid {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.image-wrap__map-col {
+  display: table-cell;
+  position: relative;
+  width: 50%;
+  background: #ff6347;
+}
+.image-wrap__map-col img {
+  width: 100%;
+}
+.image-wrap__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+}
 .intro {
   position: relative;
   height: 100vh;
@@ -619,6 +641,10 @@ img {
 .page__row_3 {
   background: transparent url("images/bg-3.png") left center no-repeat;
   background-size: auto 100%;
+}
+.page__row_4 {
+  background: transparent url("images/bg-4.png") right 50px center no-repeat;
+  background-size: auto;
 }
 .page__row_5 {
   background: transparent url("images/bg-5.png") 50px center no-repeat;

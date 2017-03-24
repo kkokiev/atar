@@ -93,4 +93,26 @@
 .image-wrap__slider > li > img {
   width: 100%;
 }
+.image-wrap__map-grid {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.image-wrap__map-col {
+  display: table-cell;
+  position: relative;
+  width: 50%;
+  background: #ff6347;
+}
+.image-wrap__map-col img {
+  width: 100%;
+}
+.image-wrap__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+}
 /*# sourceMappingURL=src/stylus/blocks/image-wrap.css.map */

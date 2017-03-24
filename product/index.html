@@ -90,6 +90,7 @@
 			</div>
 		</div><!-- /.intro -->
 
+		<!-- decorated list -->
 		<div class="page__row page__row_2">
 
 			<div class="container">
@@ -179,7 +180,6 @@
 
 				</ul>
 			</div><!-- /.container -->
-
 		</div><!-- /.page-row page__row_2-->
 		
 
@@ -219,6 +219,46 @@
 			</div><!-- /.container -->
 		</div><!-- /.page-row page__row_3-->
 		
+
+		<!-- map and image -->
+		<div class="page__row page__row_4">
+
+			<div class="container">
+				
+				<h2 class="page__title">
+					הדמיות
+				</h2>
+
+				<div class="image-wrap">
+
+					<div class="image-wrap__label">
+						<p>אשדר גאה להציג את פרויקט קריית מוצקין: פרויקט דיור למשתכן הממוקם בשכונת ‘משכנות האומנים’ בקרית מוצקין, מגרשים .902 ,90</p>
+						<p>הפרויקט נבנה בסטנדרט גבוה ומוקפד במיוחד עפ”י מפרט מחייב של משרד השיכון לדיור למשתכן. בפרויקט יוקמו שני בניינים עם סך של  226יח”ד, כאשר כל בניין יכיל  25קומות: בקומות ( 1-13כולל) מתוכננות חמש דירות בקומה, כאשר חלוקת הדירות לקומה הינה  2דירות בנות 4חדרים ו- 3דירות בנות  3חדרים</p>
+						<p>בקומות ( 14-25כולל) מתוכננות  4דירות בקומה, כאשר כל דירה בת  4חדרים</p>
+						<p>תושבי הפרויקט יוכלו ליהנות מיתרונות רבים הכוללים שכונה חדשה ומתפתחת, קרבה למוקדי תרבות ולרכבת, נוף פתוח המשקיף בחלקו אל הים ומחניון תת קרקעי, המשותף לשני המגרשים וכולל קומת חניון תת”ק המציעה שורת מכפילי חניה. בנוסף, מתוכננות גם חניות במפלס הפיתוח של הפרויקט</p>
+					</div>
+
+					<div class="image-wrap__body">
+						
+						<div class="image-wrap__map-grid">
+							<div class="image-wrap__map-col">
+								<img src="images/content/pic-3.jpg" alt="">
+							</div>
+							<div class="image-wrap__map-col">
+								<div class="image-wrap__map" id="google-map">
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+
+			</div><!-- /.container -->
+		</div><!-- /.page-row page__row_3-->
+
+
 		<!-- second slider -->
 		<div class="page__row page__row_5">
 
@@ -248,6 +288,7 @@
 			</div><!-- /.container -->
 		</div><!-- /.page-row page__row_3-->
 		
+
 		<!-- table section-->
 		<div class="page__row">
 			
@@ -312,6 +353,59 @@
 	</div><!-- /.page -->
 
 </div><!-- /.main-wrapper -->
+
+<!-- Google map api key only for index page, key need to be changed -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY3gKl7q7WRNtbpgHr8RnZ2vmXFLlSCNU&callback=initMap"
+ type="text/javascript"></script>
+<!-- google map setup script -->
+<script>
+	function initMap(){
+
+		var point = new google.maps.LatLng(32.0549541, 34.77256579999994);
+
+		var myMapOptions = {
+			zoom: 16,
+			zoomControl: false,
+			center: point,
+			disableDoubleClickZoom: false,
+			mapTypeControl: false,
+			scaleControl: false,
+			scrollwheel: false,
+			panControl: true,
+			streetViewControl: false,
+			draggable : true,
+			overviewMapControl: true,
+			overviewMapControlOptions: {
+				opened: false,
+			},
+			mapTypeId: google.maps.MapTypeId.TERRAIN,
+			zoomControl: false,
+			scaleControl: false,
+			scrollwheel: false
+		};
+
+		var map = new google.maps.Map(document.getElementById("google-map"),myMapOptions);
+
+		var borderCoordinates = [
+			{lat: 32.054645, lng: 34.768382},
+			{lat: 32.057409, lng: 34.769927},
+			{lat: 32.052335, lng: 34.769304},
+			{lat: 32.054645, lng: 34.768382}
+		];
+
+		var borderPath = new google.maps.Polygon({
+			path: borderCoordinates,
+			strokeColor: '#df4c4b',
+			strokeOpacity: 1.0,
+			strokeWeight: 2,
+			fillColor: '#df4c4b',
+			fillOpacity: .5
+		});
+
+		borderPath.setMap(map);
+
+	};
+</script>
 
 <!-- JQuery -->
 <script src="lib/jquery2/jquery.min.js"></script>

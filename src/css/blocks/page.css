@@ -11,6 +11,10 @@
   background: transparent url("images/bg-3.png") left center no-repeat;
   background-size: auto 100%;
 }
+.page__row_4 {
+  background: transparent url("images/bg-4.png") right 50px center no-repeat;
+  background-size: auto;
+}
 .page__row_5 {
   background: transparent url("images/bg-5.png") 50px center no-repeat;
   background-size: auto;
