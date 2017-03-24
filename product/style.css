@@ -338,6 +338,18 @@ img {
     max-width: 60px;
   }
 }
+.image-wrap .bx-wrapper {
+  margin: 0;
+}
+.image-wrap .bx-wrapper .bx-viewport {
+  box-shadow: none;
+  border: 0;
+  left: 0;
+  background: transparent;
+}
+.image-wrap__slider > li > img {
+  width: 100%;
+}
 .intro {
   position: relative;
   height: 100vh;
@@ -516,7 +528,8 @@ img {
 .page__row_2 {
   padding-bottom: 152px;
   background: transparent url("images/bg-2.png") right center no-repeat;
-  background-size: contain;
+  background-size: 30% auto;
+  border-bottom: 1px solid #000;
 }
 .page__title {
   margin-bottom: 30px;
@@ -524,8 +537,23 @@ img {
   font-size: 3.5rem;
   line-height: 1.2em;
 }
+.page__title_row-2 {
+  padding-right: 15%;
+}
 .rounded-list > li {
   paddin-top: 6px;
+}
+.rounded-list > li:nth-child(1),
+.rounded-list > li:nth-child(6) {
+  margin-right: 20%;
+}
+.rounded-list > li:nth-child(2),
+.rounded-list > li:nth-child(5) {
+  margin-right: 25%;
+}
+.rounded-list > li:nth-child(3),
+.rounded-list > li:nth-child(4) {
+  margin-right: 30%;
 }
 .table {
   max-width: 100%;

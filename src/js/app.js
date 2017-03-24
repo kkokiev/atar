@@ -24,6 +24,12 @@ if(!(window.console && console.log)) {
 		$navbar.stop().slideToggle();
 	});
 
+	$('.js-slider-1').bxSlider({
+		mode: 'fade',
+		pager: false,
+		infiniteLoop: false
+	})
+
 	// var testMobile;
 	// var isMobile = {
 	// 	Android: function() {

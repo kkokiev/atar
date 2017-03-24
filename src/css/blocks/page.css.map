@@ -1,1 +1,1 @@
-{"version":3,"sources":["src/stylus/blocks/page.styl"],"names":[],"mappings":"AAEC;EACC,aAAY,KAAZ;;AAEA;EACC,gBAAe,MAAf;EACA,YAAW,0DAAX;EACA,iBAAgB,QAAhB;;AAEF;EACC,eAAc,KAAd;EACA,OAAM,UAAN;EACA,WAAU,OAAV;EACA,aAAY,MAAZ","file":"page.css"}
+{"version":3,"sources":["src/stylus/blocks/page.styl"],"names":[],"mappings":"AAEC;EACC,aAAY,KAAZ;;AAEA;EACC,gBAAe,MAAf;EACA,YAAW,0DAAX;EACA,iBAAgB,SAAhB;EACA,eAAc,eAAd;;AAEF;EACC,eAAc,KAAd;EACA,OAAM,UAAN;EACA,WAAU,OAAV;EACA,aAAY,MAAZ;;AAEA;EACC,eAAc,IAAd","file":"page.css"}
