@@ -1,0 +1,15 @@
+.page__row {
+  padding-top: 80px;
+}
+.page__row_2 {
+  padding-bottom: 152px;
+  background: transparent url("images/bg-2.png") right center no-repeat;
+  background-size: contain;
+}
+.page__title {
+  margin-bottom: 30px;
+  color: brandDark;
+  font-size: 3.5rem;
+  line-height: 1.2em;
+}
+/*# sourceMappingURL=src/stylus/blocks/page.css.map */
