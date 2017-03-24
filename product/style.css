@@ -188,6 +188,13 @@ img {
 }
 .header {
   position: relative;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+    background: #23408f;
+  }
 }
 .header__bg {
   z-index: 1;
@@ -199,6 +206,16 @@ img {
   height: 61px;
   width: 100%;
   background: #23408f;
+}
+@media only screen and (max-width: 1400px) {
+  .header__bg {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__bg {
+    display: none;
+  }
 }
 .header__body {
   z-index: 2;
@@ -212,9 +229,29 @@ img {
   width: 50%;
   vertical-align: middle;
 }
+@media only screen and (max-width: 1100px) {
+  .header__body-col {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__body-col {
+    width: 100%;
+  }
+}
 .header__body-col_logo-wrap {
   padding: 0 5px;
   text-align: left;
+}
+@media only screen and (max-width: 1100px) {
+  .header__body-col_logo-wrap {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__body-col_logo-wrap {
+    display: none;
+  }
 }
 .header__nav-block-wrap {
   position: relative;
@@ -230,6 +267,11 @@ img {
   padding: 0 5px;
   vertical-align: middle;
 }
+@media only screen and (max-width: 768px) {
+  .header__nav-wrap {
+    width: 40px;
+  }
+}
 .header__navbar {
   display: none;
   position: absolute;
@@ -242,9 +284,27 @@ img {
 .header__title-wrap {
   display: table-cell;
   vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .header__title {
   font-size: 3.8rem;
+}
+@media only screen and (max-width: 1100px) {
+  .header__title {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__title {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header__title {
+    font-size: 1.8rem;
+  }
 }
 .header__title strong,
 .header__title b {
@@ -258,8 +318,18 @@ img {
   max-width: 153px;
   margin-left: 15px;
 }
+@media only screen and (max-width: 1100px) {
+  .header__logo-img_1 {
+    max-width: 61px;
+  }
+}
 .header__logo-img_2 {
   max-width: 114px;
+}
+@media only screen and (max-width: 1100px) {
+  .header__logo-img_2 {
+    max-width: 60px;
+  }
 }
 .intro {
   position: relative;

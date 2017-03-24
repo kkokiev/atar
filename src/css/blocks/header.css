@@ -1,5 +1,7 @@
 .header {
   position: relative;
+  padding: 0 10px;
+below(tablet)
 }
 .header__bg {
   z-index: 1;
@@ -11,6 +13,8 @@
   height: 61px;
   width: 100%;
   background: brandDark;
+below(1400px)
+below(tablet)
 }
 .header__body {
   z-index: 2;
@@ -23,10 +27,14 @@
   display: table-cell;
   width: 50%;
   vertical-align: middle;
+below(large)
+below(tablet)
 }
 .header__body-col_logo-wrap {
   padding: 0 5px;
   text-align: left;
+below(large)
+below(tablet)
 }
 .header__nav-block-wrap {
   position: relative;
@@ -41,6 +49,7 @@
   width: 80px;
   padding: 0 5px;
   vertical-align: middle;
+below(tablet)
 }
 .header__navbar {
   display: none;
@@ -57,6 +66,9 @@
 }
 .header__title {
   font-size: 3.8rem;
+below(large)
+below(tablet)
+below(small)
 }
 .header__title strong,
 .header__title b {
@@ -69,8 +81,10 @@
 .header__logo-img_1 {
   max-width: 153px;
   margin-left: 15px;
+below(large)
 }
 .header__logo-img_2 {
   max-width: 114px;
+below(large)
 }
 /*# sourceMappingURL=src/stylus/blocks/header.css.map */

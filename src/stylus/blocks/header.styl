@@ -1,5 +1,10 @@
 .header
 	position relative
+	padding 0 10px
+	
+	+below(tablet)
+		padding 10px
+		background brandDark
 	
 	&__bg
 		z-index 1
@@ -11,6 +16,12 @@
 		height 61px
 		width 100%
 		background brandDark
+		
+		+below(1400px)
+			left 0
+			
+		+below(tablet)
+			display none
 		
 	&__body
 		z-index 2
@@ -24,9 +35,21 @@
 		width 50%
 		vertical-align middle
 		
+		+below(large)
+			width 70%
+			
+		+below(tablet)
+			width 100%
+		
 		&_logo-wrap
 			padding 0 5px
 			text-align left
+			
+			+below(large)
+				width 30%
+				
+			+below(tablet)
+				display none
 			
 	&__nav-block-wrap
 		position relative
@@ -41,6 +64,9 @@
 		width 80px
 		padding 0 5px
 		vertical-align middle
+		
+		+below(tablet)
+			width 40px
 				
 	&__navbar
 		display none
@@ -54,9 +80,19 @@
 	&__title-wrap
 		display table-cell
 		vertical-align middle
+		single-line()
 		
 	&__title
 		font-size 3.8rem
+		
+		+below(large)
+			font-size 2.6rem
+			
+		+below(tablet)
+			text-align left
+			
+		+below(small)
+			font-size 1.8rem
 		
 		strong,
 		b
@@ -70,5 +106,11 @@
 			max-width 153px
 			margin-left 15px
 			
+			+below(large)
+				max-width 61px
+			
 		&_2
 			max-width 114px
+			
+			+below(large)
+				max-width 60px
