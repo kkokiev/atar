@@ -880,16 +880,70 @@ img {
   }
 }
 .table {
-  max-width: 100%;
-  margin: 100px auto 200px;
+  width: 100%;
   font-size: 2rem;
+  text-align: center;
+}
+.table thead {
+  color: #fff200;
 }
 .table thead th {
   padding: 5px 10px;
+  background: #23408f;
+  background: linear-gradient(to bottom, #8292bf 0%, #324d97 54%, #23408f 100%);
   border: 1px solid #23408f;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.table thead th:hover {
+  opacity: 0.8;
+}
+.table thead th:last-child {
+  color: #fff;
+  background: #ec008c;
+  background: linear-gradient(to bottom, #f46fbe 0%, #ee1a98 54%, #ec008c 100%);
+  border: 1px solid #ec008c;
+}
+.table thead th:last-child:hover {
+  opacity: 1;
+}
+.table tbody {
+  color: #23408f;
 }
 .table tbody td {
   padding: 5px 10px;
   border: 1px solid #23408f;
+}
+.table tbody td:last-child {
+  position: relative;
+}
+.table .table__separator td {
+  height: 26px;
+  border: none;
+}
+.table__popup-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: #23408f;
+  background: linear-gradient(to bottom, #8292bf 0%, #324d97 54%, #23408f 100%);
+}
+.table__popup-btn:hover,
+.table__popup-btn:focus {
+  opacity: 0.8;
+}
+.table__popup-btn span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.table__row-alert {
+  background: #ec008c;
 }
 /*# sourceMappingURL=src/stylus/style.css.map */
