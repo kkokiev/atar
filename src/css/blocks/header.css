@@ -59,6 +59,7 @@ below(tablet)
   right: 0;
   padding: 30px 0 10px;
   background: brandDark;
+below(tablet)
 }
 .header__title-wrap {
   display: table-cell;

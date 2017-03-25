@@ -37,6 +37,7 @@ above(tablet)
 }
 .intro__title-inner p {
   font-size: 4vh;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 .intro__header {
   z-index: 1000;
