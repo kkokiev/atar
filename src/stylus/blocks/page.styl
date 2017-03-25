@@ -2,16 +2,22 @@
 	
 	&__row
 		padding-top 30px
-		padding-left 15px
-		padding-right 15px
+		padding-left 10px
+		padding-right 10px
+		
+		+above(small)
+			padding-left 15px
+			padding-right 15px
 		
 		+above(large)
 			padding-top 80px
 			padding-bottom 152px //padding-top + title height
+			margin-top -152px
 		
 		&_2
 			
 			+above(large)
+				margin-top 0
 				background transparent url(images/bg-2.png) right center no-repeat
 				background-size 30% auto
 			

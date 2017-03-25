@@ -378,6 +378,15 @@ img {
   color: #fff;
   background: #40ae49;
   box-shadow: 3px 2px 2px 0px rgba(0,0,0,0.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media only screen and (max-width: 1100px) {
+  .image-wrap__label {
+    position: static;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .image-wrap__label:after {
   position: absolute;
@@ -390,6 +399,11 @@ img {
   border-style: solid;
   border-width: 6px 0 0 5px;
   border-color: transparent transparent transparent #23408f;
+}
+@media only screen and (max-width: 1100px) {
+  .image-wrap__label:after {
+    display: none;
+  }
 }
 .image-wrap__label p {
   font-size: 1.5rem;
@@ -417,6 +431,21 @@ img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  z-index: 100;
+}
+@media only screen and (max-width: 768px) {
+  .image-wrap .bx-wrapper .bx-controls-direction a {
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .image-wrap .bx-wrapper .bx-controls-direction a {
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+  }
 }
 .image-wrap .bx-wrapper .bx-controls-direction a:hover,
 .image-wrap .bx-wrapper .bx-controls-direction a:focus {
@@ -425,6 +454,16 @@ img {
 .image-wrap .bx-wrapper .bx-prev {
   left: auto;
   right: -63px;
+}
+@media only screen and (max-width: 768px) {
+  .image-wrap .bx-wrapper .bx-prev {
+    right: -40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .image-wrap .bx-wrapper .bx-prev {
+    right: -30px;
+  }
 }
 .image-wrap .bx-wrapper .bx-prev:after {
   content: '';
@@ -440,9 +479,30 @@ img {
   border-width: 20px 0 20px 12px;
   border-color: transparent transparent transparent #fff;
 }
+@media only screen and (max-width: 768px) {
+  .image-wrap .bx-wrapper .bx-prev:after {
+    left: 20px;
+    border-width: 15px 0 15px 9px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .image-wrap .bx-wrapper .bx-prev:after {
+    left: 15px;
+  }
+}
 .image-wrap .bx-wrapper .bx-next {
   right: auto;
   left: -63px;
+}
+@media only screen and (max-width: 768px) {
+  .image-wrap .bx-wrapper .bx-next {
+    left: -40px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .image-wrap .bx-wrapper .bx-next {
+    left: -30px;
+  }
 }
 .image-wrap .bx-wrapper .bx-next:after {
   content: '';
@@ -458,6 +518,17 @@ img {
   border-width: 20px 12px 20px 0;
   border-color: transparent #fff transparent transparent;
 }
+@media only screen and (max-width: 768px) {
+  .image-wrap .bx-wrapper .bx-next:after {
+    right: 20px;
+    border-width: 15px 9px 15px 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .image-wrap .bx-wrapper .bx-next:after {
+    right: 15px;
+  }
+}
 .image-wrap__slider > li > img {
   width: 100%;
 }
@@ -466,11 +537,21 @@ img {
   width: 100%;
   table-layout: fixed;
 }
+@media only screen and (max-width: 600px) {
+  .image-wrap__map-grid {
+    display: block;
+  }
+}
 .image-wrap__map-col {
   display: table-cell;
   position: relative;
   width: 50%;
-  background: #ff6347;
+}
+@media only screen and (max-width: 600px) {
+  .image-wrap__map-col {
+    display: block;
+    width: 100%;
+  }
 }
 .image-wrap__map-col img {
   width: 100%;
@@ -481,7 +562,13 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ccc;
+  border: 2px solid #def46b;
+}
+@media only screen and (max-width: 600px) {
+  .image-wrap__map {
+    position: static;
+    height: 300px;
+  }
 }
 .intro {
   position: relative;
@@ -696,17 +783,25 @@ img {
 }
 .page__row {
   padding-top: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media only screen and (min-width: 480px) {
+  .page__row {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media only screen and (min-width: 1100px) {
   .page__row {
     padding-top: 80px;
     padding-bottom: 152px;
+    margin-top: -152px;
   }
 }
 @media only screen and (min-width: 1100px) {
   .page__row_2 {
+    margin-top: 0;
     background: transparent url("images/bg-2.png") right center no-repeat;
     background-size: 30% auto;
   }

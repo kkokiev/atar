@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../_MyWORK/atar/src/stylus/blocks/page.styl"],"names":[],"mappings":"AAEC;EACC,aAAY,KAAZ;EACA,cAAa,KAAb;EACA,eAAc,KAAd;AAEY;;AAyBb;EACC,eAAc,OAAd;EACA,OAAM,UAAN;EACA,WAAU,OAAV;EACA,aAAY,MAAZ;AAEY;AAGA","file":"page.css"}
+{"version":3,"sources":["src/stylus/blocks/page.styl"],"names":[],"mappings":"AAEC;EACC,aAAY,KAAZ;EACA,cAAa,KAAb;EACA,eAAc,KAAd;AAEY;AAIA;;AA2Bb;EACC,eAAc,OAAd;EACA,OAAM,UAAN;EACA,WAAU,OAAV;EACA,aAAY,MAAZ;AAEY;AAGA","file":"page.css"}

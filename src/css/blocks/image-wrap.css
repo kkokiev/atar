@@ -12,6 +12,9 @@
   color: light;
   background: #40ae49;
   box-shadow: 3px 2px 2px 0px rgba(0,0,0,0.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+below(large)
 }
 .image-wrap__label:after {
   position: absolute;
@@ -24,6 +27,7 @@
   border-style: solid;
   border-width: 6px 0 0 5px;
   border-color: transparent transparent transparent brandDark;
+below(large)
 }
 .image-wrap__label p {
   font-size: 1.5rem;
@@ -49,6 +53,9 @@
   margin-top: -63px;
   background: rgba(0,0,0,0.5);
   border-radius: 50%;
+  z-index: 100;
+below(tablet)
+below(small)
 }
 .image-wrap .bx-wrapper .bx-controls-direction a:hover,
 .image-wrap .bx-wrapper .bx-controls-direction a:focus {
@@ -57,6 +64,8 @@
 .image-wrap .bx-wrapper .bx-prev {
   left: auto;
   right: -63px;
+below(tablet)
+below(small)
 }
 .image-wrap .bx-wrapper .bx-prev:after {
   content: '';
@@ -71,10 +80,14 @@
   border-style: solid;
   border-width: 20px 0 20px 12px;
   border-color: transparent transparent transparent light;
+below(tablet)
+below(small)
 }
 .image-wrap .bx-wrapper .bx-next {
   right: auto;
   left: -63px;
+below(tablet)
+below(small)
 }
 .image-wrap .bx-wrapper .bx-next:after {
   content: '';
@@ -89,6 +102,8 @@
   border-style: solid;
   border-width: 20px 12px 20px 0;
   border-color: transparent light transparent transparent;
+below(tablet)
+below(small)
 }
 .image-wrap__slider > li > img {
   width: 100%;
@@ -97,12 +112,13 @@
   display: table;
   width: 100%;
   table-layout: fixed;
+below(600px)
 }
 .image-wrap__map-col {
   display: table-cell;
   position: relative;
   width: 50%;
-  background: #ff6347;
+below(600px)
 }
 .image-wrap__map-col img {
   width: 100%;
@@ -113,6 +129,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ccc;
+  border: 2px solid #def46b;
+below(600px)
 }
 /*# sourceMappingURL=src/stylus/blocks/image-wrap.css.map */

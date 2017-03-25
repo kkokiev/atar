@@ -63,7 +63,7 @@ if(!(window.console && console.log)) {
 	/*
 		setup header
 	*/
-	$(window).on('scroll', function(){
+	var handleHeaderClass = function() {
 		var scroll = $(window).scrollTop();
 		var $header = $('#header');
 		if (scroll > 0) {
@@ -71,6 +71,14 @@ if(!(window.console && console.log)) {
 		} else {
 			$header.removeClass("header_scrolled");
 		}
+	};
+
+	$(window).on('scroll', function(){
+		handleHeaderClass();
+	});
+
+	$(window).on('load', function(){
+		handleHeaderClass();
 	});
 
 })(jQuery);

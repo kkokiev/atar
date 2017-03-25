@@ -12,6 +12,13 @@
 		color light
 		background #40ae49
 		box-shadow 3px 2px 2px 0px rgba(0,0,0, .5)
+		border-bottom-left-radius 5px
+		border-bottom-right-radius 5px
+		
+		+below(large)
+			position static
+			width 100%
+			margin-bottom 10px
 		
 		&:after
 			position absolute
@@ -24,6 +31,9 @@
 			border-style solid
 			border-width 6px 0 0 5px
 			border-color transparent transparent transparent brandDark
+			
+			+below(large)
+				display none
 			
 		p
 			font-size 1.5rem
@@ -49,6 +59,17 @@
 		margin-top -63px
 		background rgba(0,0,0, .5)
 		border-radius 50%
+		z-index 100
+		
+		+below(tablet)
+			height 80px
+			width 80px
+			margin-top -40px
+			
+		+below(small)
+			height 60px
+			width 60px
+			margin-top -30px
 		
 		&:hover,
 		&:focus
@@ -57,6 +78,12 @@
 	.bx-wrapper .bx-prev
 		left auto
 		right -63px
+		
+		+below(tablet)
+			right -40px
+			
+		+below(small)
+			right -30px
 		
 		&:after
 			content ''
@@ -71,10 +98,23 @@
 			border-style solid
 			border-width 20px 0 20px 12px
 			border-color transparent transparent transparent light
+			
+			+below(tablet)
+				left 20px
+				border-width 15px 0 15px 9px
+				
+			+below(small)
+				left 15px
 		
 	.bx-wrapper .bx-next
 		right auto
 		left -63px
+		
+		+below(tablet)
+			left -40px
+			
+		+below(small)
+			left -30px
 		
 		&:after
 			content ''
@@ -89,6 +129,13 @@
 			border-style solid
 			border-width 20px 12px 20px 0
 			border-color transparent light transparent transparent
+			
+			+below(tablet)
+				right 20px
+				border-width 15px 9px 15px 0
+				
+			+below(small)
+				right 15px
 		
 	&__slider
 		
@@ -102,11 +149,17 @@
 		width 100%
 		table-layout fixed
 		
+		+below(600px)
+			display block
+		
 	&__map-col
 		display table-cell
 		position relative
 		width 50%
-		background tomato
+		
+		+below(600px)
+			display block
+			width 100%
 		
 		img
 			width 100%
@@ -117,4 +170,8 @@
 		left 0
 		right 0
 		bottom 0
-		background #ccc
+		border 2px solid #def46b
+		
+		+below(600px)
+			position static
+			height 300px
