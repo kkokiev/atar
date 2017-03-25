@@ -171,10 +171,14 @@
 		position absolute
 		top 0
 		left 0
-		right 0
-		bottom 0
+		height 100%
+		width 100%
 		border 2px solid #def46b
 		
 		+below(600px)
 			position static
 			height 300px
+			
+	&__map-backup
+		+below(600px)
+			display none

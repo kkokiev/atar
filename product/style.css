@@ -570,14 +570,19 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100%;
+  width: 100%;
   border: 2px solid #def46b;
 }
 @media only screen and (max-width: 600px) {
   .image-wrap__map {
     position: static;
     height: 300px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .image-wrap__map-backup {
+    display: none;
   }
 }
 .intro {
@@ -817,35 +822,38 @@ img {
   }
 }
 @media only screen and (min-width: 1100px) {
-  .page__row_2 {
+  .page__row_1 {
     margin-top: 0;
     background: transparent url("images/bg-2.png") right center no-repeat;
     background-size: 30% auto;
   }
 }
 @media only screen and (min-width: 1100px) {
-  .page__row_3 {
+  .page__row_2 {
     background: transparent url("images/bg-3.png") left center no-repeat;
     background-size: auto 100%;
   }
 }
 @media only screen and (min-width: 1100px) {
-  .page__row_4 {
+  .page__row_3 {
     background: transparent url("images/bg-4.png") right 50px center no-repeat;
     background-size: auto;
   }
 }
 @media only screen and (min-width: 1100px) {
-  .page__row_5 {
+  .page__row_4 {
     background: transparent url("images/bg-5.png") 50px center no-repeat;
     background-size: auto;
   }
 }
 .page__title {
-  margin-bottom: 0.85em;
+  margin-bottom: 0.5em;
   color: #23408f;
   font-size: 2.4rem;
   line-height: 1.2em;
+}
+.page__title span {
+  font-size: 0.7em;
 }
 @media only screen and (min-width: 600px) {
   .page__title {
@@ -882,13 +890,20 @@ img {
 .table {
   width: 100%;
   font-size: 2rem;
-  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .table {
+    font-size: 1.5rem;
+  }
 }
 .table thead {
   color: #fff200;
 }
 .table thead th {
-  padding: 5px 10px;
+  padding: 9px 10px;
+  font-family: 'rubik-medium', serif;
+  font-size: 2.2rem;
+  text-align: center;
   background: #23408f;
   background: linear-gradient(to bottom, #8292bf 0%, #324d97 54%, #23408f 100%);
   border: 1px solid #23408f;
@@ -896,6 +911,11 @@ img {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .table thead th {
+    font-size: 1.8rem;
+  }
 }
 .table thead th:hover {
   opacity: 0.8;
@@ -909,41 +929,80 @@ img {
 .table thead th:last-child:hover {
   opacity: 1;
 }
+.table thead th.tablesaw-sortable-descending {
+  background: #8292bf;
+  background: linear-gradient(to bottom, #23408f 0%, #324d97 54%, #8292bf 100%);
+  border: 1px solid #23408f;
+}
 .table tbody {
   color: #23408f;
 }
 .table tbody td {
-  padding: 5px 10px;
+  height: 38px;
+  padding: 0 10px;
+  text-align: center;
   border: 1px solid #23408f;
 }
 .table tbody td:last-child {
   position: relative;
+  padding: 0;
+}
+.table .tablesaw-sortable-ascending .tablesaw-sortable-arrow:after,
+.table .tablesaw-sortable-descending .tablesaw-sortable-arrow:after {
+  width: 0;
+  height: 0;
+  content: '';
+  margin-left: 0;
+  margin-right: 5px;
+  border-style: solid;
+}
+.table .tablesaw-sortable-ascending .tablesaw-sortable-arrow:after {
+  border-width: 0 8px 14px 8px;
+  border-color: transparent transparent #fff200 transparent;
+}
+.table .tablesaw-sortable-descending .tablesaw-sortable-arrow:after {
+  border-width: 14px 8px 0 8px;
+  border-color: #fff200 transparent transparent transparent;
 }
 .table .table__separator td {
   height: 26px;
   border: none;
 }
 .table__popup-btn {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: inline-block;
   height: 100%;
   width: 100%;
-  display: block;
   color: #fff;
+  line-height: 33px;
   text-decoration: none;
   background: #23408f;
   background: linear-gradient(to bottom, #8292bf 0%, #324d97 54%, #23408f 100%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
 }
 .table__popup-btn:hover,
 .table__popup-btn:focus {
   opacity: 0.8;
 }
 .table__popup-btn span {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
   vertical-align: middle;
 }
 .table__row-alert {
+  color: #000;
   background: #ec008c;
+}
+.table__sold-label {
+  display: inline-block;
+  padding: 4px 12px;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=src/stylus/style.css.map */

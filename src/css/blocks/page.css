@@ -6,11 +6,14 @@ above(small)
 above(large)
 }
 .page__title {
-  margin-bottom: 0.85em;
+  margin-bottom: 0.5em;
   color: brandDark;
   font-size: 2.4rem;
   line-height: 1.2em;
 above(600px)
 above(large)
+}
+.page__title span {
+  font-size: 0.7em;
 }
 /*# sourceMappingURL=src/stylus/blocks/page.css.map */

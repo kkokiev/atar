@@ -1,16 +1,20 @@
 .table {
   width: 100%;
   font-size: 2rem;
-  text-align: center;
+below(tablet)
 }
 .table thead {
   color: brand;
 }
 .table thead th {
-  padding: 5px 10px;
+  padding: 9px 10px;
+  font-family: font-3;
+  font-size: 2.2rem;
+  text-align: center;
   background: #23408f;
   background: linear-gradient(to bottom, #8292bf 0%, #324d97 54%, #23408f 100%);
   border: 1px solid brandDark;
+below(tablet)
 }
 .table thead th:hover {
   opacity: 0.8;
@@ -24,41 +28,75 @@
 .table thead th:last-child:hover {
   opacity: 1;
 }
+.table thead th.tablesaw-sortable-descending {
+  background: #8292bf;
+  background: linear-gradient(to bottom, #23408f 0%, #324d97 54%, #8292bf 100%);
+  border: 1px solid brandDark;
+}
 .table tbody {
   color: brandDark;
 }
 .table tbody td {
-  padding: 5px 10px;
+  height: 38px;
+  padding: 0 10px;
+  text-align: center;
   border: 1px solid brandDark;
 }
 .table tbody td:last-child {
   position: relative;
+  padding: 0;
+}
+.table .tablesaw-sortable-ascending .tablesaw-sortable-arrow:after,
+.table .tablesaw-sortable-descending .tablesaw-sortable-arrow:after {
+  width: 0;
+  height: 0;
+  content: '';
+  margin-left: 0;
+  margin-right: 5px;
+  border-style: solid;
+}
+.table .tablesaw-sortable-ascending .tablesaw-sortable-arrow:after {
+  border-width: 0 8px 14px 8px;
+  border-color: transparent transparent brand transparent;
+}
+.table .tablesaw-sortable-descending .tablesaw-sortable-arrow:after {
+  border-width: 14px 8px 0 8px;
+  border-color: brand transparent transparent transparent;
 }
 .table .table__separator td {
   height: 26px;
   border: none;
 }
 .table__popup-btn {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: inline-block;
   height: 100%;
   width: 100%;
-  display: block;
   color: light;
+  line-height: 33px;
   text-decoration: none;
   background: #23408f;
   background: linear-gradient(to bottom, #8292bf 0%, #324d97 54%, #23408f 100%);
+  vertical-align: top;
 }
 .table__popup-btn:hover,
 .table__popup-btn:focus {
   opacity: 0.8;
 }
 .table__popup-btn span {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
   vertical-align: middle;
 }
 .table__row-alert {
+  color: main;
   background: #ec008c;
+}
+.table__sold-label {
+  display: inline-block;
+  padding: 4px 12px;
+  color: light;
+  border: 1px solid light;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=src/stylus/blocks/table.css.map */

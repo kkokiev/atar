@@ -62,10 +62,11 @@
 
 								<nav class="header__navbar" id="navbar">
 									<ul class="main-menu">
-										<li><a href="#section-2">התהליך</a></li>
-										<li><a href="#section-3">על הפרוייקט</a></li>
+										<li><a href="#section-1">התהליך</a></li>
+										<li><a href="#section-2">על הפרויקט</a></li>
+										<li><a href="#section-3">הסביבה</a></li>
 										<li><a href="#section-4">הדמיות</a></li>
-										<li><a href="#section-5">הדמיות</a></li>
+										<li><a href="#section-5">בחירת דירה</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -98,7 +99,7 @@
 	<div class="page">
 
 		<!-- decorated list -->
-		<div class="page__row page__row_2" id="section-2">
+		<div class="page__row page__row_1" id="section-1">
 
 			<div class="container">
 				<h2 class="page__title page__title_row-2">
@@ -191,7 +192,7 @@
 		
 
 		<!-- first slider -->
-		<div class="page__row page__row_3" id="section-3">
+		<div class="page__row page__row_2" id="section-2">
 
 			<div class="container">
 				
@@ -228,7 +229,7 @@
 		
 
 		<!-- map and image -->
-		<div class="page__row page__row_4" id="section-4">
+		<div class="page__row page__row_3" id="section-3">
 
 			<div class="container">
 				
@@ -252,8 +253,8 @@
 								<img src="images/content/pic-3.jpg" alt="">
 							</div>
 							<div class="image-wrap__map-col">
+								<img class="image-wrap__map-backup" src="images/content/map-backup.jpg" alt="">
 								<div class="image-wrap__map" id="google-map">
-									
 								</div>
 							</div>
 						</div>
@@ -267,7 +268,7 @@
 
 
 		<!-- second slider -->
-		<div class="page__row page__row_5" id="section-5">
+		<div class="page__row page__row_4" id="section-4">
 
 			<div class="container">
 				
@@ -297,17 +298,27 @@
 		
 
 		<!-- table section-->
-		<div class="page__row">
+		<div class="page__row" id="section-5">
 			
 			<div class="container">
 
+				<h2 class="page__title">
+					בחירת דירה
+					<span>סנן לפי</span>
+				</h2>
+
 				<div class="table-section">
 					
-					<table class="table" data-tablesaw-sortable data-tablesaw-mode="swipe">
+					<table 
+						class="table tablesaw" 
+						data-tablesaw-sortable 
+						data-tablesaw-mode="swipe"
+						data-tablesaw-minimap
+					>
 						<thead>
 							<tr>
 								<!-- Default column -->
-								<th data-tablesaw-sortable-col data-tablesaw-sortable-default-col>בניין</th>
+								<th data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="persist">בניין</th>
 
 								<th data-tablesaw-sortable-col>קומה</th>
 
@@ -339,7 +350,7 @@
 								<td>₪1,350,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
@@ -352,7 +363,7 @@
 								<td>₪1,650,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
@@ -365,7 +376,7 @@
 								<td>₪1,650,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
@@ -376,7 +387,11 @@
 								<td>1</td>
 								<td>4</td>
 								<td>₪1,850,000</td>
-								<td>1 col 6</td>
+								<td>
+									<span class="table__sold-label">
+										נמכר
+									</span>
+								</td>
 							</tr>
 
 							<tr>
@@ -387,7 +402,7 @@
 								<td>₪1,850,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
@@ -400,7 +415,7 @@
 								<td>₪1,850,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
@@ -413,7 +428,7 @@
 								<td>₪1,650,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
@@ -426,7 +441,7 @@
 								<td>₪1,850,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
@@ -439,10 +454,24 @@
 								<td>₪2,050,000</td>
 								<td>
 									<a href="#" class="table__popup-btn">
-										<span>לפרטים נוספים</span>
+										לפרטים נוספים
 									</a>
 								</td>
 							</tr>
+
+							<tr class="table__row-alert">
+								<td>בניין 3</td>
+								<td>3</td>
+								<td>4</td>
+								<td>4</td>
+								<td>₪1,850,000</td>
+								<td>
+									<span class="table__sold-label">
+										נמכר
+									</span>
+								</td>
+							</tr>
+
 						</tbody>
 					</table>
 				</div>
@@ -461,9 +490,9 @@
 <script>
 	function initMap(){
 
-		var isDraggable = $(document).width() > 480 ? true : false;
+		var isDraggable = document.body.clientWidth > 480 ? true : false;
 
-		var point = new google.maps.LatLng(32.0549541, 34.77256579999994);
+		var point = new google.maps.LatLng(31.810653, 34.645879);
 
 		var myMapOptions = {
 			zoom: 16,
@@ -493,10 +522,11 @@
 			more info https://developers.google.com/maps/documentation/javascript/shapes#polylines
 		*/
 		var borderCoordinates = [
-			{lat: 32.054645, lng: 34.768382},
-			{lat: 32.057409, lng: 34.769927},
-			{lat: 32.052335, lng: 34.769304},
-			{lat: 32.054645, lng: 34.768382}
+			//just example
+			// {lat: 32.054645, lng: 34.768382},
+			// {lat: 32.057409, lng: 34.769927},
+			// {lat: 32.052335, lng: 34.769304},
+			// {lat: 32.054645, lng: 34.768382}
 		];
 
 		var borderPath = new google.maps.Polygon({

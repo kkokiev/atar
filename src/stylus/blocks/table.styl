@@ -1,17 +1,25 @@
 .table 
 	width 100%
 	font-size 2rem
-	text-align center
+	
+	+below(tablet)
+		font-size 1.5rem
 	
 	thead
 		color brand
 		
 		th
-			padding 5px 10px
+			padding 9px 10px
+			font-family font-3
+			font-size 2.2rem
+			text-align center
 			background #23408f
 			background linear-gradient(to bottom, #8292bf 0%,#324d97 54%,#23408f 100%)
 			border 1px solid brandDark
 			tr(.3s)
+			
+			+below(tablet)
+				font-size 1.8rem
 			
 			&:hover
 				opacity .8
@@ -24,17 +32,41 @@
 				
 				&:hover
 					opacity 1
+					
+		th.tablesaw-sortable-descending
+			background #8292bf
+			background linear-gradient(to bottom, #23408f 0%,#324d97 54%,#8292bf 100%)
+			border 1px solid brandDark
 			
 	tbody
 		color brandDark
 		
 		td
-			padding 5px 10px
+			height 38px
+			padding 0 10px
+			text-align center
 			border 1px solid brandDark
 			
 			&:last-child
 				position relative
+				padding 0
 				
+	.tablesaw-sortable-ascending .tablesaw-sortable-arrow:after, 
+	.tablesaw-sortable-descending .tablesaw-sortable-arrow:after
+		width 0
+		height 0
+		content ''
+		margin-left 0
+		margin-right 5px
+		border-style solid
+		
+	.tablesaw-sortable-ascending .tablesaw-sortable-arrow:after
+		border-width 0 8px 14px 8px
+		border-color transparent transparent brand transparent
+		
+	.tablesaw-sortable-descending .tablesaw-sortable-arrow:after
+		border-width 14px 8px 0 8px
+		border-color brand transparent transparent transparent;
 			
 	.table__separator
 		
@@ -43,25 +75,35 @@
 			border none 
 			
 	&__popup-btn
-		position absolute
-		top 0
-		left 0
+		display inline-block
 		height 100%
 		width 100%
-		display block
 		color light
+		line-height 33px
 		text-decoration none
 		background #23408f
 		background linear-gradient(to bottom, #8292bf 0%,#324d97 54%,#23408f 100%)
+		single-line()
+		vertical-align top
 		
 		&:hover,
 		&:focus
 			opacity .8
 		
 		span
-			display inline-block
+			display block
+			width 100%
+			padding 0 10px
 			vertical-align middle
 			
 
 	&__row-alert
+		color main
 		background #ec008c
+		
+	&__sold-label
+		display inline-block
+		padding 4px 12px
+		color light
+		border 1px solid light
+		border-radius 5px

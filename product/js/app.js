@@ -16,19 +16,20 @@ if(!(window.console && console.log)) {
 	
 	var $body = $('body'),
 	$navBtn = $('#nav-btn'),
-	$navbar = $('#navbar');
+	$navbar = $('#navbar'),
+	$googleMap = $('#google-map');
 
 
 	/*
 		setup navigation
 	*/
-	$navBtn.on('click', function(e){
+	$navBtn.on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('nav-btn_opened');
 		$navbar.stop().slideToggle();
 	});
 
-	$body.on('click', function(){
+	$body.on('click', function() {
 		$navBtn.removeClass('nav-btn_opened');
 		$navbar.stop().slideUp();
 	});
@@ -82,11 +83,11 @@ if(!(window.console && console.log)) {
 		}
 	};
 
-	$(window).on('scroll', function(){
+	$(window).on('scroll', function() {
 		handleHeaderClass();
 	});
 
-	$(window).on('load', function(){
+	$(window).on('load', function() {
 		handleHeaderClass();
 	});
 
@@ -111,7 +112,7 @@ if(!(window.console && console.log)) {
 			}
 		}
 	});
-	
+
 
 })(jQuery);
 
