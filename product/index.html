@@ -19,76 +19,75 @@
 <body class="body">
 	
 <div class="main-wrapper">
+		
+	<!-- intro and header -->
+	<div class="intro" style="background-image: url(images/bg-intro.jpg)">
+		
+		<div class="intro__header">
+
+			<div class="header" id="header">
+
+				<div class="header__bg">
+					
+				</div>
+
+				<div class="container">
+
+					<div class="header__body">
+
+						<div class="header__body-col">
+							
+							<div class="header__nav-block-wrap">
+								<div class="header__nav-block">
+									<div class="header__nav-wrap">
+
+										<a class="nav-btn" id="nav-btn" href="#">
+											<span></span>
+											<span></span>
+											<span></span>
+										</a>
+
+									</div>
+
+									<div class="header__title-wrap">
+
+										<h1 class="header__title">
+											אשדר מוצקין
+											<strong>מחיר למשתכן</strong>
+										</h1>
+
+									</div>
+
+								</div><!-- /.header__nav-block -->
+
+								<nav class="header__navbar" id="navbar">
+									<ul class="main-menu">
+										<li><a href="#section-2">Section 1</a></li>
+										<li><a href="#section-3">Section 2</a></li>
+										<li><a href="#section-4">Section 3</a></li>
+										<li><a href="#section-5">Section 4</a></li>
+									</ul>
+								</nav>
+							</div>
+
+						</div><!-- /.header__body-col -->
+
+						<div class="header__body-col header__body-col_logo-wrap">
+
+							<img class="header__logo-img header__logo-img_1" src="images/logo-1.png" alt="logo">
+							<img class="header__logo-img header__logo-img_2" src="images/logo-2.png" alt="logo">
+
+						</div><!-- /.header__body-col -->
+
+					</div><!-- /.header__body -->
+
+				</div><!-- /.container -->
+			</div><!-- /.header -->
+
+		</div>
+	</div><!-- /.intro -->
 
 	<div class="page">
-		
-		<!-- intro and header -->
-		<div class="intro" style="background-image: url(images/bg-intro.jpg)">
-			
-			<div class="intro__header">
-
-				<div class="header">
-
-					<div class="header__bg">
-						
-					</div>
-
-					<div class="container">
-
-						<div class="header__body">
-
-							<div class="header__body-col">
-								
-								<div class="header__nav-block-wrap">
-									<div class="header__nav-block">
-										<div class="header__nav-wrap">
-
-											<a class="nav-btn" id="nav-btn" href="#">
-												<span></span>
-												<span></span>
-												<span></span>
-											</a>
-
-										</div>
-
-										<div class="header__title-wrap">
-
-											<h1 class="header__title">
-												אשדר מוצקין
-												<strong>מחיר למשתכן</strong>
-											</h1>
-
-										</div>
-
-									</div><!-- /.header__nav-block -->
-
-									<nav class="header__navbar" id="navbar">
-										<ul class="main-menu">
-											<li><a href="#section-2">Section 1</a></li>
-											<li><a href="#section-3">Section 2</a></li>
-											<li><a href="#section-4">Section 3</a></li>
-											<li><a href="#section-5">Section 4</a></li>
-										</ul>
-									</nav>
-								</div>
-
-							</div><!-- /.header__body-col -->
-
-							<div class="header__body-col header__body-col_logo-wrap">
-
-								<img class="header__logo-img header__logo-img_1" src="images/logo-1.png" alt="logo">
-								<img class="header__logo-img header__logo-img_2" src="images/logo-2.png" alt="logo">
-
-							</div><!-- /.header__body-col -->
-
-						</div><!-- /.header__body -->
-
-					</div><!-- /.container -->
-
-				</div><!-- /.header -->
-
-			</div>
-		</div><!-- /.intro -->
 
 		<!-- decorated list -->
 		<div class="page__row page__row_2">
@@ -386,6 +385,10 @@
 
 		var map = new google.maps.Map(document.getElementById("google-map"),myMapOptions);
 
+		/*
+			setup overlay
+			more info https://developers.google.com/maps/documentation/javascript/shapes#polylines
+		*/
 		var borderCoordinates = [
 			{lat: 32.054645, lng: 34.768382},
 			{lat: 32.057409, lng: 34.769927},

@@ -1,31 +1,47 @@
 .page
 	
 	&__row
-		padding-top 80px
-		padding-bottom 152px //padding-top + title height
+		padding-top 30px
+		padding-left 15px
+		padding-right 15px
+		
+		+above(large)
+			padding-top 80px
+			padding-bottom 152px //padding-top + title height
 		
 		&_2
-			background transparent url(images/bg-2.png) right center no-repeat
-			background-size 30% auto
-			border-bottom 1px solid #000
+			
+			+above(large)
+				background transparent url(images/bg-2.png) right center no-repeat
+				background-size 30% auto
 			
 		&_3
-			background transparent url(images/bg-3.png) left center no-repeat
-			background-size auto 100%
+			+above(large)
+				background transparent url(images/bg-3.png) left center no-repeat
+				background-size auto 100%
 			
 		&_4
-			background transparent url(images/bg-4.png) right 50px center no-repeat
-			background-size auto
+			+above(large)
+				background transparent url(images/bg-4.png) right 50px center no-repeat
+				background-size auto
 			
 		&_5
-			background transparent url(images/bg-5.png) 50px center no-repeat
-			background-size auto
+			+above(large)
+				background transparent url(images/bg-5.png) 50px center no-repeat
+				background-size auto
 		
 	&__title
-		margin-bottom 30px
+		margin-bottom .85em
 		color brandDark
-		font-size 3.5rem
+		font-size 2.4rem
 		line-height 1.2em
 		
+		+above(600px)
+			font-size 3rem
+		
+		+above(large)
+			font-size 3.5rem
+		
 		&_row-2
-			padding-right 15%
+			+above(large)
+				padding-right 15%

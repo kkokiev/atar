@@ -1,16 +1,5 @@
 .rounded-list > li {
   paddin-top: 6px;
-}
-.rounded-list > li:nth-child(1),
-.rounded-list > li:nth-child(6) {
-  margin-right: 20%;
-}
-.rounded-list > li:nth-child(2),
-.rounded-list > li:nth-child(5) {
-  margin-right: 25%;
-}
-.rounded-list > li:nth-child(3),
-.rounded-list > li:nth-child(4) {
-  margin-right: 30%;
+above(large)
 }
 /*# sourceMappingURL=src/stylus/blocks/rounded-list.css.map */

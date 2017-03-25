@@ -5,6 +5,8 @@
   padding-left: 30px;
   padding-right: 215px;
   border-top: 1px solid brandLight;
+below(large)
+below(600px)
 }
 .list-item__label {
   position: absolute;
@@ -20,6 +22,8 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-shadow: 3px 2px 2px 0px rgba(0,0,0,0.35);
+below(large)
+below(600px)
 }
 .list-item__label:after {
   position: absolute;
@@ -32,6 +36,7 @@
   border-style: solid;
   border-width: 5px 0 0 5px;
   border-color: transparent transparent transparent brandDark;
+below(600px)
 }
 .list-item__label span {
   display: inline-block;

@@ -6,6 +6,13 @@
 	padding-right 215px
 	border-top 1px solid brandLight
 	
+	+below(large)
+		padding-left 10px
+		padding-right 175px
+		
+	+below(600px)
+		padding 0 10px 15px
+	
 	&__label
 		position absolute
 		top -6px
@@ -21,6 +28,16 @@
 		border-bottom-right-radius 5px
 		box-shadow 3px 2px 2px 0px rgba(0,0,0, .35)
 		
+		+below(large)
+			right 10px
+			padding 15px 5px 10px
+			font-size 2rem
+			
+		+below(600px)
+			position static
+			margin-top -5px
+			margin-bottom 10px
+		
 		&:after
 			position absolute
 			top 0
@@ -32,6 +49,10 @@
 			border-style solid
 			border-width 5px 0 0 5px
 			border-color transparent transparent transparent brandDark
+			
+			+below(600px)
+				top -5px
+				right 5px
 		
 		span
 			display inline-block

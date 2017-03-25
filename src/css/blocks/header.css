@@ -87,4 +87,16 @@ below(large)
   max-width: 114px;
 below(large)
 }
+.header_scrolled .header__logo-img_1 {
+  height: 61px;
+  width: auto;
+  max-width: none;
+below(large)
+}
+.header_scrolled .header__logo-img_2 {
+  height: 40px;
+  width: auto;
+  max-width: none;
+below(large)
+}
 /*# sourceMappingURL=src/stylus/blocks/header.css.map */

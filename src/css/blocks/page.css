@@ -1,31 +1,15 @@
 .page__row {
-  padding-top: 80px;
-  padding-bottom: 152px;
-}
-.page__row_2 {
-  background: transparent url("images/bg-2.png") right center no-repeat;
-  background-size: 30% auto;
-  border-bottom: 1px solid #000;
-}
-.page__row_3 {
-  background: transparent url("images/bg-3.png") left center no-repeat;
-  background-size: auto 100%;
-}
-.page__row_4 {
-  background: transparent url("images/bg-4.png") right 50px center no-repeat;
-  background-size: auto;
-}
-.page__row_5 {
-  background: transparent url("images/bg-5.png") 50px center no-repeat;
-  background-size: auto;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+above(large)
 }
 .page__title {
-  margin-bottom: 30px;
+  margin-bottom: 0.85em;
   color: brandDark;
-  font-size: 3.5rem;
+  font-size: 2.4rem;
   line-height: 1.2em;
-}
-.page__title_row-2 {
-  padding-right: 15%;
+above(600px)
+above(large)
 }
 /*# sourceMappingURL=src/stylus/blocks/page.css.map */

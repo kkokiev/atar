@@ -40,4 +40,12 @@
 .intro__title-inner p {
   font-size: 5rem;
 }
+.intro__header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
 /*# sourceMappingURL=src/stylus/blocks/intro.css.map */
