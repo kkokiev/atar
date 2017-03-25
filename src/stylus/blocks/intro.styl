@@ -14,13 +14,17 @@
 		left 0
 		right 0
 		bottom 0
-		height 510px
-		width 510px
-		padding 54px
+		height auto
+		width 100%
+		padding 5vh
 		margin auto
-		background transparent url(images/intro-bg-round.png) center center no-repeat
-		background-size cover
-		border-radius 50%
+		
+		+above(tablet)
+			height 51vh
+			width 51vh
+			background transparent url(images/intro-bg-round.png) center center no-repeat
+			background-size cover
+			border-radius 50%
 		
 	&__title-inner-wrap
 		display table
@@ -34,11 +38,11 @@
 		
 		h2
 			font-family font-2
-			font-size 6rem
+			font-size 6.5vh
 			text-shadow 2px 2px 2px rgba(0,0,0, .5)
 			
 		p
-			font-size 5rem
+			font-size 4vh
 			
 	&__header
 		z-index 1000

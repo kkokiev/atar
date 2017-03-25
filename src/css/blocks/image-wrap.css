@@ -1,6 +1,7 @@
 .image-wrap {
   position: relative;
   padding-top: 6px;
+below(large)
 }
 .image-wrap__label {
   z-index: 2;

@@ -83,8 +83,17 @@
 
 				</div><!-- /.container -->
 			</div><!-- /.header -->
-
 		</div>
+
+		<div class="intro__title">
+			<div class="intro__title-inner-wrap">
+				<div class="intro__title-inner">
+					<h2>ברכות לזוכים!</h2>
+					<p>חברתנו תיצור קשר <br> באופן יזום עם הזוכים</p>
+				</div>
+			</div>
+		</div>
+
 	</div><!-- /.intro -->
 
 	<div class="page">
@@ -360,6 +369,8 @@
 <script>
 	function initMap(){
 
+		var isDraggable = $(document).width() > 480 ? true : false;
+
 		var point = new google.maps.LatLng(32.0549541, 34.77256579999994);
 
 		var myMapOptions = {
@@ -372,7 +383,7 @@
 			scrollwheel: false,
 			panControl: true,
 			streetViewControl: false,
-			draggable : true,
+			draggable : isDraggable,
 			overviewMapControl: true,
 			overviewMapControlOptions: {
 				opened: false,
@@ -426,13 +437,3 @@
 
 </body>
 </html>
-
-
-<!-- <div class="intro__title">
-	<div class="intro__title-inner-wrap">
-		<div class="intro__title-inner">
-			<h2>ברכות לזוכים!</h2>
-			<p>חברתנו תיצור קשר <br> באופן יזום עם הזוכים</p>
-		</div>
-	</div>
-</div> -->

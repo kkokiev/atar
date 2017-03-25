@@ -368,6 +368,11 @@ img {
   position: relative;
   padding-top: 6px;
 }
+@media only screen and (max-width: 1100px) {
+  .image-wrap {
+    padding-top: 0;
+  }
+}
 .image-wrap__label {
   z-index: 2;
   position: absolute;
@@ -586,15 +591,21 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 510px;
-  width: 510px;
-  padding: 54px;
+  height: auto;
+  width: 100%;
+  padding: 5vh;
   margin: auto;
-  background: transparent url("images/intro-bg-round.png") center center no-repeat;
-  background-size: cover;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+  .intro__title {
+    height: 51vh;
+    width: 51vh;
+    background: transparent url("images/intro-bg-round.png") center center no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
 }
 .intro__title-inner-wrap {
   display: table;
@@ -608,11 +619,11 @@ img {
 }
 .intro__title-inner h2 {
   font-family: 'rubik-bold', serif;
-  font-size: 6rem;
+  font-size: 6.5vh;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 .intro__title-inner p {
-  font-size: 5rem;
+  font-size: 4vh;
 }
 .intro__header {
   z-index: 1000;
