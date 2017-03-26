@@ -870,6 +870,110 @@ img {
     padding-right: 15%;
   }
 }
+.popup {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #23408f;
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.5);
+}
+.popup__header {
+  background: #e7e7e8;
+}
+.popup__body {
+  padding: 25px 20px;
+}
+.popup__footer {
+  padding: 20px;
+  font-size: 2.2rem;
+}
+.popup__footer-separator {
+  height: 1px;
+  margin-bottom: 20px;
+  background: #23408f;
+}
+.popup__body-row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.popup__body-col {
+  display: table-cell;
+  width: 50%;
+}
+.popup__body-col_1 {
+  border-left: 1px solid #23408f;
+}
+.popup__body-col_2 {
+  vertical-align: bottom;
+}
+.popup__decorated-table {
+  width: 100%;
+  table-layout: fixed;
+  font-family: 'rubik-medium', serif;
+  font-size: 3rem;
+}
+.popup__decorated-table td {
+  padding: 10px;
+}
+.popup__decorated-table td:first-child {
+  width: 30%;
+  padding-left: 20px;
+  text-align: left;
+}
+.popup__decorated-table td:nth-child(2) {
+  width: 70%;
+  padding-right: 20px;
+}
+.popup__decorated-table img {
+  height: 46px;
+  width: auto;
+}
+.popup__price-wrap {
+  padding: 20px;
+  font-family: 'rubik-medium', serif;
+}
+.popup__price-title {
+  font-size: 3.4rem;
+}
+.popup__price {
+  font-size: 5rem;
+}
+.popup__price span {
+  font-size: 3rem;
+}
+.popup__files-wrap {
+  padding: 5px 10px;
+  background: #e7e7e8;
+}
+.popup__files-wrap:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.popup__file-link {
+  display: block;
+  float: left;
+  width: 33.3333%;
+  padding: 5px;
+  color: #595959;
+  text-align: center;
+  text-decoration: none;
+}
+.popup__file-link:hover,
+.popup__file-link:focus {
+  opacity: 0.6;
+}
+.popup__file-link img {
+  width: 42px;
+  margin-bottom: 10px;
+}
+.popup__file-link span {
+  display: block;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .rounded-list > li {
   paddin-top: 6px;
 }
@@ -967,6 +1071,11 @@ img {
 .table .table__separator td {
   height: 26px;
   border: none;
+}
+@media only screen and (max-width: 768px) {
+  .table .table__separator td {
+    height: 16px;
+  }
 }
 .table__popup-btn {
   display: inline-block;

@@ -1,0 +1,96 @@
+.popup
+	max-width 700px
+	margin 0 auto
+	color brandDark
+	box-shadow 2px 2px 6px 0px rgba(0,0,0, .5)
+	
+	&__header
+		background #e7e7e8
+		
+	&__body
+		padding 25px 20px
+		
+	&__footer
+		padding 20px
+		font-size 2.2rem
+		
+	&__footer-separator
+		height 1px
+		margin-bottom 20px
+		background brandDark
+		
+	&__body-row
+		display table
+		width 100%
+		table-layout fixed
+		
+	&__body-col
+		display table-cell
+		width 50%
+		
+		&_1
+			border-left 1px solid brandDark
+			
+		&_2
+			vertical-align bottom
+			
+	&__decorated-table
+		width 100%
+		table-layout fixed
+		font-family font-3
+		font-size 3rem
+		
+		td
+			padding 10px
+			
+			&:first-child
+				width 30%
+				padding-left 20px
+				text-align left
+			
+			&:nth-child(2)
+				width 70%
+				padding-right 20px
+		img
+			height 46px
+			width auto
+	
+	&__price-wrap
+		padding 20px
+		font-family font-3
+		
+	&__price-title
+		font-size 3.4rem
+		
+	&__price
+		font-size 5rem
+		
+		span
+			font-size 3rem
+			
+	&__files-wrap
+		clearfix()
+		padding 5px 10px
+		background #e7e7e8
+		
+	&__file-link
+		display block
+		float left
+		width 33.3333%
+		padding 5px
+		color #595959
+		text-align center
+		text-decoration none
+		
+		&:hover,
+		&:focus
+			opacity .6
+		
+		img
+			width 42px
+			margin-bottom 10px
+			
+		span
+			display block
+			font-size 1.3rem
+			single-line()

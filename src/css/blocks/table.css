@@ -66,6 +66,7 @@ below(tablet)
 .table .table__separator td {
   height: 26px;
   border: none;
+below(tablet)
 }
 .table__popup-btn {
   display: inline-block;
