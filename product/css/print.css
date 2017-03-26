@@ -1,0 +1,30 @@
+.main-wrapper {
+  display: none !important;
+}
+.popup {
+  max-width: 100%;
+  padding: 30px 20px;
+  box-shadow: none;
+  color: #000;
+}
+.popup__header {
+  background: transparent;
+}
+.popup__logo {
+  top: 0;
+  left: 50px;
+}
+.popup__body-col_1 {
+  border-left: 1px solid #000;
+}
+.popup__body-col_2 {
+  vertical-align: middle;
+}
+.popup__print-btn,
+.popup__close-btn,
+.popup__files-wrap {
+  display: none !important;
+}
+.popup__footer-separator {
+  background: #000;
+}
