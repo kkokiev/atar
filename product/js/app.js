@@ -73,7 +73,7 @@ if(!(window.console && console.log)) {
 	/*
 		smooth scroll
 	*/
-	$('a[href*=\\#]:not([href=\\#])').on('click', function() {
+	$('.main-menu > li > a').on('click', function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
 			var target = $(this.hash);
@@ -95,26 +95,69 @@ if(!(window.console && console.log)) {
 	/*setup magnific-popup*/
 	$('.js-table-popup').magnificPopup({
 		type: 'inline',
-		preloader: false,
-		focus: '#name',
-
-		// When elemened is focused, some mobile browsers in some cases zoom in
-		// It looks not nice, so we disable it:
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
 	});
 
 	$('.js-popup-close').on( "click", function(e) {
 		e.preventDefault();
 		$.magnificPopup.close();
 	});
+
+
+	function initMap(){
+
+		var isDraggable = document.body.clientWidth > 480 ? true : false;
+
+		var point = new google.maps.LatLng(31.810653, 34.645879);
+
+		var myMapOptions = {
+			zoom: 16,
+			zoomControl: false,
+			center: point,
+			disableDoubleClickZoom: false,
+			mapTypeControl: false,
+			scaleControl: false,
+			scrollwheel: false,
+			panControl: true,
+			streetViewControl: false,
+			draggable : isDraggable,
+			overviewMapControl: true,
+			overviewMapControlOptions: {
+				opened: false,
+			},
+			mapTypeId: google.maps.MapTypeId.TERRAIN,
+			zoomControl: false,
+			scaleControl: false,
+			scrollwheel: false
+		};
+
+		var map = new google.maps.Map(document.getElementById("google-map"),myMapOptions);
+
+		/*
+			setup overlay
+			more info https://developers.google.com/maps/documentation/javascript/shapes#polylines
+		*/
+		var borderCoordinates = [
+			//just example
+			// {lat: 32.054645, lng: 34.768382},
+			// {lat: 32.057409, lng: 34.769927},
+			// {lat: 32.052335, lng: 34.769304},
+			// {lat: 32.054645, lng: 34.768382}
+		];
+
+		var borderPath = new google.maps.Polygon({
+			path: borderCoordinates,
+			strokeColor: '#df4c4b',
+			strokeOpacity: 1.0,
+			strokeWeight: 2,
+			fillColor: '#df4c4b',
+			fillOpacity: .5
+		});
+
+		borderPath.setMap(map);
+
+	};
+
+	initMap();
 
 
 })(jQuery);

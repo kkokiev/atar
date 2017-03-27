@@ -1,0 +1,26 @@
+.table-section .tablesaw-advance a.tablesaw-nav-btn {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.right {
+  margin-right: 10px;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.left:before,
+.table-section .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  top: 7px;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.left:before {
+  left: 10px;
+  border-left: 5px solid #808080;
+  border-right: 5px solid transparent;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  left: 3px;
+  border-right: 5px solid #808080;
+  border-left: 5px solid transparent;
+}
+.table-section .tablesaw-advance.minimap {
+  margin-top: 7px;
+}
+/*# sourceMappingURL=src/stylus/blocks/table-section.css.map */

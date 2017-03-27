@@ -89,7 +89,7 @@ below(tablet)
   padding: 0 10px;
   vertical-align: middle;
 }
-.table__row-alert {
+.table__row-alert td {
   color: main;
   background: #ec008c;
 }

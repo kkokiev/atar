@@ -803,6 +803,9 @@ img {
   top: 10px;
   transform: rotate(-135deg);
 }
+.page {
+  padding-bottom: 40px;
+}
 .page__row {
   padding-top: 30px;
   padding-left: 10px;
@@ -875,8 +878,12 @@ img {
   max-width: 700px;
   margin: 0 auto;
   color: #23408f;
+  text-align: right;
   background: #fff;
   box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.5);
+}
+.popup .mfp-close {
+  display: none;
 }
 .popup__header {
   background: #e7e7e8;
@@ -1208,6 +1215,31 @@ img {
     margin-right: 30%;
   }
 }
+.table-section .tablesaw-advance a.tablesaw-nav-btn {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.right {
+  margin-right: 10px;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.left:before,
+.table-section .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  top: 7px;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.left:before {
+  left: 10px;
+  border-left: 5px solid #808080;
+  border-right: 5px solid transparent;
+}
+.table-section .tablesaw-advance a.tablesaw-nav-btn.right:before {
+  left: 3px;
+  border-right: 5px solid #808080;
+  border-left: 5px solid transparent;
+}
+.table-section .tablesaw-advance.minimap {
+  margin-top: 7px;
+}
 .table {
   width: 100%;
   font-size: 2rem;
@@ -1318,7 +1350,7 @@ img {
   padding: 0 10px;
   vertical-align: middle;
 }
-.table__row-alert {
+.table__row-alert td {
   color: #000;
   background: #ec008c;
 }

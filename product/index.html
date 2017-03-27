@@ -321,7 +321,7 @@
 						<thead>
 							<tr>
 								<!-- Default column -->
-								<th data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="persist">בניין</th>
+								<th data-tablesaw-sortable-col data-tablesaw-sortable-default-col>בניין</th>
 
 								<th data-tablesaw-sortable-col>קומה</th>
 
@@ -585,64 +585,8 @@
 </div><!-- /.popup -->
 
 <!-- Google map api key only for index page, key need to be changed -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY3gKl7q7WRNtbpgHr8RnZ2vmXFLlSCNU&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY3gKl7q7WRNtbpgHr8RnZ2vmXFLlSCNU"
  type="text/javascript"></script>
-<!-- google map setup script -->
-<script>
-	function initMap(){
-
-		var isDraggable = document.body.clientWidth > 480 ? true : false;
-
-		var point = new google.maps.LatLng(31.810653, 34.645879);
-
-		var myMapOptions = {
-			zoom: 16,
-			zoomControl: false,
-			center: point,
-			disableDoubleClickZoom: false,
-			mapTypeControl: false,
-			scaleControl: false,
-			scrollwheel: false,
-			panControl: true,
-			streetViewControl: false,
-			draggable : isDraggable,
-			overviewMapControl: true,
-			overviewMapControlOptions: {
-				opened: false,
-			},
-			mapTypeId: google.maps.MapTypeId.TERRAIN,
-			zoomControl: false,
-			scaleControl: false,
-			scrollwheel: false
-		};
-
-		var map = new google.maps.Map(document.getElementById("google-map"),myMapOptions);
-
-		/*
-			setup overlay
-			more info https://developers.google.com/maps/documentation/javascript/shapes#polylines
-		*/
-		var borderCoordinates = [
-			//just example
-			// {lat: 32.054645, lng: 34.768382},
-			// {lat: 32.057409, lng: 34.769927},
-			// {lat: 32.052335, lng: 34.769304},
-			// {lat: 32.054645, lng: 34.768382}
-		];
-
-		var borderPath = new google.maps.Polygon({
-			path: borderCoordinates,
-			strokeColor: '#df4c4b',
-			strokeOpacity: 1.0,
-			strokeWeight: 2,
-			fillColor: '#df4c4b',
-			fillOpacity: .5
-		});
-
-		borderPath.setMap(map);
-
-	};
-</script>
 
 <!-- JQuery -->
 <script src="lib/jquery2/jquery.min.js"></script>
