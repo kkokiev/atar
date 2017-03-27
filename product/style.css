@@ -875,6 +875,7 @@ img {
   max-width: 700px;
   margin: 0 auto;
   color: #23408f;
+  background: #fff;
   box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.5);
 }
 .popup__header {
@@ -1015,9 +1016,13 @@ img {
   }
 }
 .popup__close-btn {
+  position: static;
   display: inline-block;
   vertical-align: top;
+  height: 25px;
   width: 25px;
+  padding: 0;
+  line-height: 23px;
 }
 .popup__close-btn:hover,
 .popup__close-btn:focus {
@@ -1326,4 +1331,3 @@ img {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/*# sourceMappingURL=src/stylus/style.css.map */

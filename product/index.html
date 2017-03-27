@@ -13,6 +13,8 @@
 	<link href="lib/bxslider/jquery.bxslider.min.css" rel="stylesheet">
 	<!-- tablesaw -->
 	<link href="lib/tablesaw/tablesaw.css" rel="stylesheet">
+	<!-- magnific popup -->
+	<link href="lib/magnificpopup/magnific-popup.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 
 	<!-- print styles -->
@@ -350,7 +352,7 @@
 								<td>2</td>
 								<td>₪1,350,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -363,7 +365,7 @@
 								<td>3</td>
 								<td>₪1,650,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -376,7 +378,7 @@
 								<td>3</td>
 								<td>₪1,650,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -402,7 +404,7 @@
 								<td>4</td>
 								<td>₪1,850,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -415,7 +417,7 @@
 								<td>4</td>
 								<td>₪1,850,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -428,7 +430,7 @@
 								<td>3</td>
 								<td>₪1,650,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -441,7 +443,7 @@
 								<td>4</td>
 								<td>₪1,850,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -454,7 +456,7 @@
 								<td>5</td>
 								<td>₪2,050,000</td>
 								<td>
-									<a href="#" class="table__popup-btn">
+									<a href="#popup" class="table__popup-btn js-table-popup">
 										לפרטים נוספים
 									</a>
 								</td>
@@ -485,7 +487,7 @@
 </div><!-- /.main-wrapper -->
 
 <!-- popup -->
-<div class="popup">
+<div class="popup mfp-hide white-popup-block" id="popup">
 	<div class="popup__header">
 		<div class="popup__header-row">
 
@@ -503,7 +505,7 @@
 
 			<div class="popup__header-col popup__header-col_3">
 				<img src="images/logo-1.png" alt="" class="popup__logo">
-				<a href="#" class="popup__close-btn" title="close">
+				<a href="#" class="popup__close-btn js-popup-close" title="close">
 					<img src="images/icons/close.png" alt="">
 				</a>
 			</div>
@@ -651,6 +653,9 @@
 <!-- tablesaw -->
 <script src="lib/tablesaw/tablesaw.jquery.js"></script>
 <script src="lib/tablesaw/tablesaw-init.js"></script>
+
+<!-- magnific popup -->
+<script src="lib/magnificpopup/jquery.magnific-popup.min.js"></script>
 
 <!-- app js -->
 <script src="js/app.js"></script>

@@ -47,28 +47,6 @@ if(!(window.console && console.log)) {
 		pager: false
 	});
 
-	// var testMobile;
-	// var isMobile = {
-	// 	Android: function() {
-	// 		return navigator.userAgent.match(/Android/i);
-	// 	},
-	// 	BlackBerry: function() {
-	// 		return navigator.userAgent.match(/BlackBerry/i);
-	// 	},
-	// 	iOS: function() {
-	// 		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-	// 	},
-	// 	Opera: function() {
-	// 		return navigator.userAgent.match(/Opera Mini/i);
-	// 	},
-	// 	Windows: function() {
-	// 		return navigator.userAgent.match(/IEMobile/i);
-	// 	},
-	// 	any: function() {
-	// 		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-	// 	}
-	// };
-
 
 	/*
 		setup header
@@ -111,6 +89,31 @@ if(!(window.console && console.log)) {
 
 			}
 		}
+	});
+
+
+	/*setup magnific-popup*/
+	$('.js-table-popup').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+
+	$('.js-popup-close').on( "click", function(e) {
+		e.preventDefault();
+		$.magnificPopup.close();
 	});
 
 
