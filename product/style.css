@@ -759,6 +759,85 @@ img {
 .main-menu > li > a:focus {
   color: #fff200;
 }
+.map-section {
+  display: table;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .map-section {
+    display: block;
+  }
+}
+.map-section__col {
+  display: table-cell;
+  width: 50%;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .map-section__col {
+    display: block;
+    width: 100%;
+  }
+}
+.map-section__text {
+  padding: 50px 30px;
+  color: #fff;
+  background: #40ae49;
+}
+.map-section__text p {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  line-height: 1.2em;
+}
+@media only screen and (max-width: 1100px) {
+  .map-section__text p {
+    font-size: 1.6rem;
+  }
+}
+.map-section__text p:last-child {
+  margin-bottom: 0;
+}
+.map-section__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .map-section__block {
+    position: relative;
+    height: 300px;
+    bottom: 0;
+  }
+}
+.map-section__block_2 {
+  top: 50%;
+  bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+  .map-section__block_2 {
+    top: 0;
+  }
+}
+.map-section__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.map-section__map {
+  background: #008000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .nav-btn {
   position: relative;
   display: block;

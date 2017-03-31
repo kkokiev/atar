@@ -1,0 +1,67 @@
+.map-section
+	display table
+	width 100%
+	
+	+below(tablet)
+		display block
+	
+	&__col
+		display table-cell
+		width 50%
+		position relative
+		
+		+below(tablet)
+			display block
+			width 100%
+		
+	&__text
+		padding 50px 30px
+		color light
+		background #40ae49
+		
+		p
+			margin-bottom 1em
+			font-size 3rem
+			line-height 1.2em
+			
+			+below(large)
+				font-size 1.6rem
+			
+			&:last-child
+				margin-bottom 0
+		
+	&__block
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 50%
+		
+		+below(tablet)
+			position relative
+			height 300px
+			bottom 0
+		
+		&_2
+			top 50%
+			bottom 0
+			
+			+below(tablet)
+				top 0
+	&__img
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		background-size cover
+		background-position 0 0
+		background-repeat no-repeat
+			
+	&__map
+		background green
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0

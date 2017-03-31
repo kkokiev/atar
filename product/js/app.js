@@ -160,5 +160,11 @@ if(!(window.console && console.log)) {
 	initMap();
 
 
+	$('.js-print-btn').on('click', function(e) {
+		e.preventDefault();
+		$('head').append('<link href="css/print.css" rel="stylesheet">');
+	});
+
+
 })(jQuery);
 
